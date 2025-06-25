@@ -6,6 +6,7 @@ export default function InscriptionFreelance() {
 
   // Form data type definition
   type FormDataType = {
+    accountType: string;
     phone: string;
     email: string;
     prefix: string;
@@ -31,6 +32,7 @@ export default function InscriptionFreelance() {
 
   // Initial form state
   const [formData, setFormData] = useState<FormDataType>({
+    accountType: 'freelance',
     phone: '',
     email: '',
     prefix: '+33',
@@ -55,7 +57,7 @@ export default function InscriptionFreelance() {
   });
 
   const handleSignupSuccess = (userId: string) => {
-    window.location.href = `/?userId=${userId}`; // redirection avec paramètre dans l'URL
+    window.location.href = `/cards/?userId=${userId}`; // redirection avec paramètre dans l'URL
   };
 
   // Error states
@@ -67,7 +69,7 @@ export default function InscriptionFreelance() {
     lastName: false,
     profileImageBase64: false,
     profileTitle: false,
-    dailyRate: false, // New error state// New error state
+    dailyRate: false,
     workType: false,
     workMethod: false,
     workLevel: false,
@@ -1040,7 +1042,7 @@ export default function InscriptionFreelance() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="relative w-full min-h-screen bg-[url('/background.png')] bg-cover bg-center flex flex-col items-center px-6 py-10"
+      className="relative w-full h-screen overflow-hidden bg-[url('/background.png')] bg-cover bg-center flex flex-col items-center px-6 py-10"
     >
       <div className="w-full flex justify-between items-center mb-12">
         <button
