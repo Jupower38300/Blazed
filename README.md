@@ -4,9 +4,7 @@ Blazed est une application de matching entre les freelances et entreprises autou
 
 ## 📸 Aperçu
 
-> Ajoutez ici un ou plusieurs screenshots ou GIFs de l'interface principale.
-
-> Exemple : ![Aperçu](./assets/preview.gif)
+![Aperçu](images/250518_15h25m35s_screenshot.png)
 
 ## 🌟 Fonctionnalités principales
 
